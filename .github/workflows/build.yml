@@ -2,7 +2,8 @@ name: Build and static analysis
 
 on:
   push:
-    - master
+    branches:
+      - "master"
   pull_request:
     types: [ opened, synchronize, reopened ]
 
