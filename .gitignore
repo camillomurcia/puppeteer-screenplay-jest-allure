@@ -219,5 +219,3 @@ $RECYCLE.BIN/
 #report allure
 allure-report/
 allure-results/
-
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,node
