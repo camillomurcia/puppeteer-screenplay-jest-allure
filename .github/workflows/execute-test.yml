@@ -2,7 +2,7 @@ name: Execute test and upload report
 
 on:
   workflow_run:
-    workflows: [ "Build" ]
+    workflows: [ "Build and static analysis" ]
 
 jobs:
 
