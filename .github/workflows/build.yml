@@ -2,7 +2,7 @@ name: Build and static analysis
 
 on:
   push:
-    - "master"
+    - master
   pull_request:
     types: [ opened, synchronize, reopened ]
 
