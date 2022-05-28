@@ -1,0 +1,49 @@
+name: Build and static analysis
+
+on:
+  workflow_run:
+    workflows: [ "Build" ]
+
+jobs:
+
+  execute-test:
+    runs-on: ubuntu-latest
+    name: Execute test
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 17.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17.x
+
+      - name: Setup Node Modules
+        uses: bahmutov/npm-install@v1
+
+      - name: Execute test
+        run: npm test
+      
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 1
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
+
