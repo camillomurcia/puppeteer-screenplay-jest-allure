@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-jest-typescript-screenplay",
+  "name": "puppeteer-screenplay-jest-allure",
   "version": "1.0.0",
   "description": "Implementation of Puppeteer + Jest + Allure using the Screenplay pattern in a simple way and generating a report with a gherkin-like narrative.",
   "main": "index.js",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/camillomurcia/puppeteer-screenplay-jest-allure"
   }
 }
