@@ -27,10 +27,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Check Prettier (Format code)
-      - run: npm run lint-prettier
+        run: npm run lint-prettier
 
       - name: Static Analysis
-      - run: npm run static-analisys
+        run: npm run static-analisys
 
       - name: Build TypeScript
-      - run: npm run test:compile
+        run: npm run test:compile
