@@ -1,5 +1,5 @@
-import { Open } from "../screenplay/task/Open";
-import * as OnStage from "../screenplay/settings/OnStage";
+import { Open } from '../screenplay/task/Open';
+import * as OnStage from '../screenplay/settings/OnStage';
 
 declare const reporter: any;
 
@@ -9,9 +9,9 @@ export async function whenOpenUrl(dataEscenarios: {
   website: string;
 }): Promise<void> {
   await reporter.startStep(
-    "When " +
+    'When ' +
       OnStage.theActorInTheSpotlight().name +
-      " wants to open the browser in " +
+      ' wants to open the browser in ' +
       dataEscenarios.nameWebsite
   );
 

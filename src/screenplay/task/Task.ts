@@ -1,5 +1,3 @@
-import { Performable } from '../settings/Performable'
+import { Performable } from '../settings/Performable';
 
-export interface Task extends Performable {
-
-}
+export interface Task extends Performable {}
