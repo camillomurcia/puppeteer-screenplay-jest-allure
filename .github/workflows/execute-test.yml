@@ -1,4 +1,4 @@
-name: Build and static analysis
+name: Execute test and upload report
 
 on:
   workflow_run:
