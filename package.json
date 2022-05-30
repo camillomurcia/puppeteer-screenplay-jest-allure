@@ -20,7 +20,7 @@
   "scripts": {
     "static-analisys": "tslint -p .",
     "test:compile": "tsc --noEmit",
-    "test": "failsafe test:compile && jest",
+    "test": "failsafe test:compile && jest --runInBand",
     "prettier-format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "prettier --check \"**/*.+(js|ts|json)\""
   },
