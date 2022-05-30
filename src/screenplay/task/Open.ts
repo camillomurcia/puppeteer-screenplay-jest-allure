@@ -11,10 +11,10 @@ export class Open implements Task {
   }
 
   async perform(actor: Actor): Promise<void> {
+    await page.goto(this.url);
     await reporter.startStep(
       actor.name + ' open the browser on the following page ' + this.url
     );
-    await page.goto(this.url);
     const screenshotBuffer = await page.screenshot();
     reporter.addAttachment('Screenshot', screenshotBuffer, 'image/png');
     await reporter.endStep();
