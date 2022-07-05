@@ -28,7 +28,7 @@
     "@types/expect-puppeteer": "^5.0.1",
     "@types/jest": "^28.1.4",
     "@types/jest-environment-puppeteer": "^5.0.2",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.0.1",
     "@types/puppeteer": "^5.4.6",
     "allure-commandline": "^2.17.2",
     "jasmine-allure-reporter": "^1.0.2",
