@@ -1,0 +1,1 @@
+[{"uid":"a4fb989906527cf9","name":"should display Facebook text on page title","time":{"start":1657160187539,"stop":1657160188347,"duration":808},"status":"passed","severity":"normal"},{"uid":"ebe81ca623c9f121","name":"should display Puppeter text on page title","time":{"start":1657160188347,"stop":1657160188979,"duration":632},"status":"failed","severity":"normal"}]
