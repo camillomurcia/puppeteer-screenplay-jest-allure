@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jul 14 01:45:40 GMT 2022","Thu Jul 14 01:45:42 GMT 2022","2327","","Open Page of differents webSite","","Open Page of differents webSite","should display Facebook text on page title","should display Facebook text on page title",""
-"failed","Thu Jul 14 01:45:42 GMT 2022","Thu Jul 14 01:45:43 GMT 2022","865","","Open Page of differents webSite","","Open Page of differents webSite","should display Puppeter text on page title","should display Puppeter text on page title",""
