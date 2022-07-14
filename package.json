@@ -35,7 +35,7 @@
     "jest": "^28.1.2",
     "jest-allure": "^0.1.3",
     "jest-circus-allure-environment": "^1.1.1",
-    "jest-jasmine2": "^28.1.2",
+    "jest-jasmine2": "^28.1.3",
     "jest-puppeteer": "^6.1.1",
     "npm-failsafe": "^0.4.3",
     "prettier": "^2.7.1",
